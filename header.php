@@ -9,13 +9,13 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"><img src="img/origami.png" height="50"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
+                <div class="navbar-nav mr-auto">
                     <a class="nav-item nav-link" href="#">Home</a>
                     <a class="nav-item nav-link" href="#">Features</a>
                     <a class="nav-item nav-link" href="#">Pricing</a>
@@ -23,6 +23,11 @@
                     <a class="nav-item nav-link" href="#">Contact</a>
                 </div>
             </div>
+
+            <form action="includes/login.php" method="post">
+            <input type="email" name="mailuid" placeholder="Username or E-mail">
+            <input type="password" name="pwd" placeholder="Enter a password">
+            <button type="submit" name="login-submit" class="btn btn-secondary">Login</button>
         </nav>
     </header>
 
