@@ -25,9 +25,14 @@
             </div>
 
             <form action="includes/login.php" method="post">
-            <input type="email" name="mailuid" placeholder="Username or E-mail">
-            <input type="password" name="pwd" placeholder="Enter a password">
-            <button type="submit" name="login-submit" class="btn btn-secondary">Login</button>
+              <input type="email" name="mailuid" placeholder="Username or E-mail">
+              <input type="password" name="pwd" placeholder="Enter your password">
+              <button type="submit" name="login-submit" class="btn btn-secondary">Login</button>
+            </form>
+                <a href="signup.php">Sign up</a>
+                <form action="includes/logout.php" method="post">
+                <button type="submit" name="logout-submit" class="btn btn-secondary">Logout</button>
+              </form>
         </nav>
     </header>
 
