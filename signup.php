@@ -36,7 +36,7 @@ require "header.php";
                     <!-- Password Repeat -->
                     <div class="md-form">
                         <input type="password" id="pwd-repeat" name="pwd-repeat" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
-                        <label for="pwd-repeat">Repeat Password</label>
+                        <label for="pwd-repeat">Confirm Password</label>
                     </div>
                     <!-- Newsletter -->
                     <div class="form-check">
