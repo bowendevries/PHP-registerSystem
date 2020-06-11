@@ -4,6 +4,7 @@ require "header.php";
 
 <main>
     <section class="md-container d-flex align-items-center justify-content-center">
+
         <!-- Material form register -->
         <div class="card">
             <h5 class="card-header info-color white-text text-center py-4">
