@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="This is register and login app built with php, MYSQLi and Bootstrap">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
@@ -12,7 +13,7 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light grey lighten-3">
             <a class="navbar-brand" href="#"><img src="img/origami.png" height="50"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,11 +31,11 @@
             <form action="includes/login.php" method="post">
               <input type="email" name="mailuid" placeholder="Username or E-mail">
               <input type="password" name="pwd" placeholder="Enter your password">
-              <button type="submit" name="login-submit" class="btn btn-secondary">Login</button>
+              <button type="submit" name="login-submit" class="btn btn-info btn-sm">Login</button>
             </form>
                 <a href="signup.php">Sign up</a>
                 <form action="includes/logout.php" method="post">
-                <button type="submit" name="logout-submit" class="btn btn-secondary">Logout</button>
+                <button type="submit" name="logout-submit" class="btn btn-info btn-sm">Logout</button>
               </form>
         </nav>
     </header>
