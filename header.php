@@ -34,55 +34,40 @@ session_start();
                 </div>
             </div>
 
-            <!--
-            <form action="includes/login.php" method="post">
-              <input type="email" name="mailuid" placeholder="Username or E-mail">
-              <input type="password" name="pwd" placeholder="Enter your password">
-              <button type="submit" name="login-submit" class="btn btn-info btn-sm">Login</button>
-            </form>
-                <a href="signup.php">Sign up</a>
-                <form action="includes/logout.php" method="post">
-                <button type="submit" name="logout-submit" class="btn btn-info btn-sm">Logout</button>
-              </form>
-            --> 
+            <?php
 
-<!-- Material form grid -->
-<form action="includes/login.php" method="post">
-  <!-- Grid row -->
-  <div class="row">
-    <!-- Grid column -->
-    <div class="col-auto">
-      <!-- Material input -->
-      <div class="md-form mt-0">
-        <input type="email" name ="userEmail" class="form-control" placeholder="Enter your email">
-      </div>
-    </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="col-auto">
-      <!-- Material input -->
-      <div class="md-form mt-0">
-        <input type="password" name="userPwd" class="form-control" placeholder="Enter your password">
-      </div>
-    </div>
-    <div class="col">
-      <button type="submit" name="login-submit" class="btn btn-info btn-sm">Login</button>
-    </div>
-    <!-- Grid column -->
-  </div>
-  <!-- Grid row -->
-</form>
-<!-- Material form grid -->
-
-
+            if(isset($_SESSION['userId'])) {
+               echo '<form action="includes/logout.php" method="post">
+                      <button type="submit" name="logout-submit" class="btn btn-info btn-sm">Logout</button>
+                    </form>';
+            } else {
+               echo '<form action="includes/login.php" method="post">
+                      <div class="row">
+                        <div class="col-auto">
+                          <div class="md-form mt-0">
+                            <input type="email" name ="userEmail" class="form-control" placeholder="Enter your email">
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="md-form mt-0">
+                            <input type="password" name="userPwd" class="form-control" placeholder="Enter your password">
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <button type="submit" name="login-submit" class="btn btn-info btn-sm">Login</button>
+                        </div>
+                      </div>
+                    </form>
+                    <a href="signup.php">Sign up</a>';
+                    }
+            ?> 
         </nav>
     </header>
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
   </body>
 </html>
